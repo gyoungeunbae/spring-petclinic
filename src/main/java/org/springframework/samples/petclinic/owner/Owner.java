@@ -50,6 +50,9 @@ public class Owner extends Person {
 	@NotEmpty
 	private String address;
 
+	@Column(name = "age")
+	private int age;
+
 	@Column(name = "city")
 	@NotEmpty
 	private String city;
@@ -71,6 +74,10 @@ public class Owner extends Person {
 	public void setAddress(String address) {
 		this.address = address;
 	}
+
+	public int getAge() { return this.age; }
+
+	public void setAge(Integer age) { this.age = age; }
 
 	public String getCity() {
 		return this.city;
